@@ -55,6 +55,54 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Styles\ButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ComboBoxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\GridSplinterStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\MenuStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\PasswordBoxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TabControlStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBlockStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\TextBoxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\BrowseCatalogPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\CirculationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\ManageCustomersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\ReportsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Windows\LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -66,6 +114,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\Pages\BrowseCatalogPage.xaml.cs">
+      <DependentUpon>BrowseCatalogPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\CirculationPage.xaml.cs">
+      <DependentUpon>CirculationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\ManageCustomersPage.xaml.cs">
+      <DependentUpon>ManageCustomersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\ReportsPage.xaml.cs">
+      <DependentUpon>ReportsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -105,10 +165,12 @@
     <Folder Include="AppData\" />
     <Folder Include="Model\" />
     <Folder Include="Resources\Fonts\" />
-    <Folder Include="Resources\Icons\" />
-    <Folder Include="Resources\Images\" />
-    <Folder Include="Styles\" />
-    <Folder Include="View\Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\booklogo.jpg" />
+    <Resource Include="Resources\Images\logo.png" />
+    <Resource Include="Resources\Icons\search.png" />
+    <Resource Include="Resources\Icons\warning.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
