@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Bookmaster.Model;
 using System.Windows;
 
 namespace Bookmaster
@@ -13,5 +8,6 @@ namespace Bookmaster
     /// </summary>
     public partial class App : Application
     {
+        public static BookmasterEntities context = new BookmasterEntities();
     }
 }
